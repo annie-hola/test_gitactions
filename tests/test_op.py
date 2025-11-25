@@ -1,5 +1,5 @@
 # import add, subtract, multiply, divide from math_operations
-from math_op import add, subtract, multiply, divide
+from src.math_op import add, subtract, multiply, divide
 import pytest
 
 def test_add():
@@ -24,4 +24,3 @@ def test_divide():
     with pytest.raises(ValueError):
         divide(5, 0)
     assert divide(0, 1) == 0
-    
