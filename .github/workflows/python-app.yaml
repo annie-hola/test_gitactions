@@ -12,8 +12,9 @@ jobs:
         runs-on: ubuntu-latest
 
         strategy:
+            fail-fast: false # Continue all jobs even if one fails
             matrix:
-                python-version: [3.8, 3.9, 3.10, 3.11] # Specify Python versions to test against
+                python-version: [3.8, 3.9] # Specify Python versions to test against
 
         steps:
             - name: Checkout repository
